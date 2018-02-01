@@ -109,7 +109,7 @@
   margin: 15px 15%;
   display: block;
   border: 0;
-  font: 0/0 "a";
+  font: 0px/0 a;
   text-shadow: none;
   color: transparent;
 }
@@ -161,22 +161,22 @@
   background-clip: padding-box;
 }
 
-#btn-11:checked ~ .tariffs-paginator label[for="btn-11"],
-#btn-22:checked ~ .tariffs-paginator label[for="btn-22"],
-#btn-33:checked ~ .tariffs-paginator label[for="btn-33"] {
+.btn-11:checked ~ .tariffs-paginator label[for="btn-11"],
+.btn-22:checked ~ .tariffs-paginator label[for="btn-22"],
+.btn-33:checked ~ .tariffs-paginator label[for="btn-33"] {
   border: 3px solid $color-two;
   background: transparent;
 }
 
-#btn-11:checked ~ .tariffs__table-wrap .tariffs__table {
+.btn-11:checked ~ .tariffs__table-wrap .tariffs__table {
   transform: translateX(2%);
 }
 
-#btn-22:checked ~ .tariffs__table-wrap .tariffs__table {
+.btn-22:checked ~ .tariffs__table-wrap .tariffs__table {
   transform: translateX(-31%);
 }
 
-#btn-33:checked ~ .tariffs__table-wrap .tariffs__table {
+.btn-33:checked ~ .tariffs__table-wrap .tariffs__table {
   transform: translateX(-64%);
 }
 
