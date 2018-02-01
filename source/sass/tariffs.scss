@@ -164,7 +164,7 @@
 #btn-11:checked ~ .tariffs-paginator label["for="btn-11"],
 #btn-22:checked ~ .tariffs-paginator label["for="btn-22"],
 #btn-33:checked ~ .tariffs-paginator label["for="btn-33"] {
-  border: 3px solid $color-two;
+  border: 3px solid $color-two;*
   background: transparent;
 }
 
