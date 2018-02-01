@@ -1,0 +1,270 @@
+.reviews__inner {
+  min-width: $min-w;
+  padding: 60px 0 40px;
+  margin: $margin;
+}
+
+.reviews__slider-wrap {
+  display: block;
+  width: $w;
+  margin: auto;
+  position: relative;
+}
+
+.reviews__slider-wrap input[type=radio] {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  visibility: hidden;
+}
+
+.reviews__slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.reviews__slider ul {
+  padding: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  list-style: none;
+  width: 500%;
+  position: relative;
+  left: 0px;
+  transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.reviews__slide {
+  text-align: center;
+  position: relative;
+  width: 20%;
+}
+
+.reviews__slide img {
+  margin: auto;
+  height: $h;
+}
+
+.reviews__author {
+  width: $w;
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: 0;
+}
+
+.reviews__h2 {
+  @include font-set(bold, 1.6);
+  font-size: $fsize-four;
+  margin: 0 auto 25px auto;
+}
+
+.reviews__text {
+  padding: 60px 0 0;
+  margin: 0 5%;
+}
+
+.reviews__info {
+  display: none;
+}
+
+.reviews::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-triangle-white-desktop.svg");
+    background-repeat: no-repeat;
+}
+
+.reviews-paginator {
+  width: 200px;
+  height: 10px;
+  margin: 0 0 0 -100px;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  bottom: -30px;
+}
+
+.reviews-paginator label {
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  display: inline-block;
+  background-color: $color-ten;
+  border: 3px solid transparent;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: content-box;
+  background-clip: padding-box;
+}
+
+.reviews-paginator label:hover {
+  background: $color-eleven;
+  background-clip: padding-box;
+}
+
+.reviews__slider-wrap input[type=radio]#button-1:checked ~ .reviews-paginator > label[for=button-1] {
+  border: 3px solid $color-two;
+  background: transparent;
+}
+
+.reviews__slider-wrap input[type=radio]#button-2:checked ~ .reviews-paginator > label[for=button-2] {
+  border: 3px solid $color-two;
+  background: transparent;
+}
+
+.reviews__slider-wrap input[type=radio]#button-3:checked ~ .reviews-paginator > label[for=button-3] {
+  border: 3px solid $color-two;
+  background: transparent;
+}
+
+.reviews__slider-wrap input[type=radio]#button-1:checked ~ .reviews__slider > ul {
+  left: 0;
+}
+
+.reviews__slider-wrap input[type=radio]#button-2:checked ~ .reviews__slider > ul {
+  left: -100%;
+}
+
+.reviews__slider-wrap input[type=radio]#button-3:checked ~ .reviews__slider > ul {
+  left: -200%;
+}
+
+label.arrows {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  display: none;
+  cursor: pointer;
+  transform: rotate(45deg);
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  border: 3px $color-ten;
+}
+
+label.arrows:hover {
+  border: 3px solid $color-twelve;
+}
+
+label.arrows:active {
+  margin-top: -23px;
+}
+
+input[type=radio]#button-1:checked ~ .arrows#arrow-2,
+input[type=radio]#button-2:checked ~ .arrows#arrow-3,
+input[type=radio]#button-3:checked ~ .arrows#arrow-1 {
+  right: -55px;
+  display: none;
+  border-style: solid solid none none;
+}
+
+input[type=radio]#button-2:checked ~ .arrows#arrow-1,
+input[type=radio]#button-3:checked ~ .arrows#arrow-2,
+input[type=radio]#button-1:checked ~ .arrows#arrow-3 {
+  left: -55px;
+  display: none;
+  border-style: none none solid solid;
+}
+
+input[type=radio]#button-2:checked ~ .arrows#arrow-1 {
+  left: -19px;
+}
+
+input[type=radio]#button-3:checked ~ .arrows#arrow-2 {
+  left: -37px;
+}
+
+@media (min-width: 660px) {
+  .reviews__inner {
+    width: 660px;
+  }
+
+  .reviews__slide {
+    padding: 0;
+  }
+
+  .reviews__author {
+    top: auto;
+    bottom: 20px;
+    left: auto;
+  }
+
+  .reviews__h2 {
+    font-size: $fsize-seven;
+    padding: 0 0 15px;
+    margin: $margin;
+  }
+
+  .reviews__text {
+    font-size: $fsize-four;
+    padding: 0 0 120px;
+  }
+
+  .reviews__info {
+    display: block;
+  }
+
+  .reviews-paginator {
+    bottom: -20px;
+  }
+}
+
+@media (min-width: 960px) {
+  .reviews__inner {
+    width: 960px;
+  }
+
+  .reviews__slider-wrap {
+    width: 800px;
+  }
+
+  .reviews__slider-wrap:before {
+    display: block;
+    content: "";
+    width: 80px;
+    height: 70px;
+    margin: 0 auto 40px;
+    background: url("../img/quotes.svg") no-repeat scroll 50% 50%;
+  }
+
+  .reviews__author {
+    bottom: 20px;
+  }
+
+  .reviews__h2 {
+    @include font-set(400, 1.6);
+  }
+
+  .reviews__text {
+    width: 680px;
+    margin: $margin;
+  }
+
+  .reviews-paginator {
+    display: none;
+  }
+
+  input[type=radio]#button-1:checked ~ .arrows#arrow-2,
+  input[type=radio]#button-2:checked ~ .arrows#arrow-3,
+  input[type=radio]#button-3:checked ~ .arrows#arrow-1 {
+    display: block;
+  }
+
+  input[type=radio]#button-2:checked ~ .arrows#arrow-1,
+  input[type=radio]#button-3:checked ~ .arrows#arrow-2,
+  input[type=radio]#button-1:checked ~ .arrows#arrow-3 {
+    display: block;
+  }
+}

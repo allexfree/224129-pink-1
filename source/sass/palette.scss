@@ -1,0 +1,314 @@
+.palette {
+  padding: 20px 20px 40px;
+  background-color: $color-six;
+  text-align: center;
+  position: relative;
+}
+
+.palette__img {
+  width: $w;
+  height: $h;
+}
+
+.palette__controls {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 40px 0 60px;
+  margin-bottom: 30px;
+}
+
+.palette__controls::before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $color-five;
+  background-color: $color-one;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.palette__controls::after {
+  display: block;
+  align-content: center;
+  content: "";
+  position: absolute;
+  bottom: 6.5px;
+  left: auto;
+  right: auto;
+  width: 80%;
+  border: 2px solid $color-two;
+}
+
+.palette__range--active {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/icon-editor-crop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.palette__range {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  margin: 0 20px;
+  background-image: url("../img/fill.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+}
+
+.palette__range:hover {
+  background-image: url("../img/fill_hover.svg");
+}
+
+.palette__range:active {
+  background-image: url("../img/fill_active.svg");
+}
+
+.palette__controls__block:last-child .palette__range {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  background-image: url("../img/contrast.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+}
+
+.palette__controls__block:last-child .palette__range:hover {
+  background-image: url("../img/contrast_hover.svg");
+}
+
+.palette__controls__block:last-child .palette__range:active {
+  background-image: url("../img/contrast_active.svg");
+}
+
+.palette__btns {
+  padding-top: 40px;
+}
+
+.palette__btns::before {
+  position: absolute;
+  width: $w;
+  bottom: 215px;
+  left: 0;
+  display: block;
+  content: "";
+  border-top: 1px solid $color-seven;
+  overflow-x: hidden;
+}
+
+.palette__btn {
+  @include font-set(bold, 1);
+  font-size: $fsize-four;
+  color: $color-one;
+  text-align: center;
+  display: block;
+  width: 280px;
+  padding: 20px 0;
+  margin: 0 auto;
+  background-color: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.palette__btn--post {
+  color: $color-five;
+  border: 3px solid $color-five;
+  &:hover {
+    background-color: $color-five;
+    color: $color-one;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.palette__btn--reset {
+  color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  margin-top: 10px;
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+    border: 3px solid $color-eight;
+  }
+}
+
+@media (min-width: 660px) {
+  .palette {
+    padding: 60px 20px;
+  }
+  .palette__form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  .palette__upload {
+    width: 50%;
+  }
+  .palette__tools {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .palette__btns {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding-left: 40px;
+  }
+  .palette__controls {
+    flex-direction: column;
+    padding: 10px 0 0 40px;
+    margin: 0;
+  }
+  .palette__range--active {
+    width: 24px;
+    height: 24px;
+    margin-right: 25px;
+  }
+  .palette__range {
+    width: 24px;
+    height: 24px;
+    margin: 25px 25px 0 0;
+    background-image: url("../img/fill_active.svg");
+  }
+  .palette__controls__block:last-child .palette__range {
+    width: 24px;
+    height: 24px;
+    margin: 25px 25px 0 0;
+    background-image: url("../img/contrast_active.svg");
+  }
+  .palette__controls::before,
+  .palette__controls::after {
+    display: none;
+  }
+  .palette__btns::before {
+    display: none;
+  }
+  .palette__btn {
+    width: 260px;
+  }
+  .palette__btn--reset {
+    margin-top: 25px;
+  }
+  .palette__controls__block {
+    width: $w;
+    border-bottom: 1px solid $color-seven;
+    padding-bottom: 25px;
+    position: relative;
+  }
+  .palette__controls__block::before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 60px;
+    border: 2px solid $color-five;
+    border-radius: 50%;
+    background-color: $color-one;
+    z-index: 1;
+  }
+  .palette__controls__block::after {
+    display: inline-block;
+    content: "";
+    width: 75%;
+    position: absolute;
+    bottom: 35px;
+    left: 50px;
+    border-bottom: 2px solid $color-two;
+  }
+  .palette__controls__block:nth-child(2)::before {
+    top: 29px;
+    right: 165px;
+  }
+  .palette__controls__block:last-child::before {
+    top: 29px;
+    right: 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .palette {
+    width: 940px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 60px 60px 60px 80px;
+  }
+  .palette__form {
+    justify-content: space-between;
+  }
+  .palette__upload {
+    width: 300px;
+  }
+  .palette__controls {
+    padding-left: 0;
+  }
+  .palette__range--active,
+  .palette__range {
+    width: 50px;
+    height: 50px;
+  }
+  .palette__controls__block:last-child .palette__range {
+    width: 50px;
+    height: 50px;
+  }
+  .palette__controls__block::after {
+    left: 100px;
+    bottom: 50px;
+    width: 70%;
+  }
+  .palette__controls__block::before {
+    top: 14px;
+    background-color: $color-six;
+  }
+  .palette__controls__block:nth-child(2)::before,
+  .palette__controls__block:last-child::before {
+    top: 40px;
+  }
+  .palette__btns {
+    flex-direction: row;
+    padding-left: 0;
+  }
+  .palette__btn--post {
+    margin-top: 25px;
+    margin-right: 45px;
+  }
+}

@@ -1,0 +1,98 @@
+@media (max-width: 660px) {
+  .effect {
+    display: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .effect {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 50px 20px;
+  }
+  .effect__container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  .effect__left-block {
+    display: block;
+    background-image: url("../img/time.png");
+    width: 238px;
+    height: 276px;
+  }
+  .effect .wrapper {
+    width: 300px;
+    margin-left: 60px;
+    text-align: left;
+  }
+  .effect__title {
+    @include font-set(bold, 1.2);
+    font-size: $fsize-ten;
+    width: 205px;
+  }
+  .effect__text {
+    @include font-set(400, 1.7);
+    font-size: $fsize-two;
+    color: $color-two;
+  }
+  .effect__link {
+    @include font-set(400, 1.7);
+    font-size: $fsize-two;
+    color: $color-five;
+  }
+  .effect__link:hover {
+    color: $color-two;
+  }
+  .effect__link:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
+}
+
+@media (min-width: 960px) {
+  .effect {
+    background-color: $color-six;
+  }
+  .effect__container {
+    width: 960px;
+    margin: $margin;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  .effect__left-block {
+    margin-left: 20px;
+    padding-right: 20px;
+    background-image: url("../img/time1.png");
+    background-repeat: no-repeat;
+    width: 298px;
+    height: 345px;
+  }
+  .effect .wrapper {
+    width: 530px;
+    margin-right: 75px;
+    padding-top: 50px;
+  }
+  .effect__title {
+    @include font-set(400, 1);
+    font-size: $fsize-ten;
+  }
+  .effect__text {
+    @include font-set(400, 1.6);
+    font-size: $fsize-four;
+  }
+  .effect__link {
+    @include font-set(400, 1.6);
+    font-size: $fsize-four;
+  }
+}
