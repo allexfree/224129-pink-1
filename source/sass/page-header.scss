@@ -19,9 +19,11 @@
     background-position: center top;
     background-size: cover;
   }
+
   .page-header {
     background-size: cover;
   }
+
   .page-header__top {
     padding: 15px 0;
   }
@@ -33,14 +35,17 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .page-header__logo-img {
     padding-left: 10px;
   }
+
   .page-header--competition,
   .page-header--photo {
     background-image: url("../img/bg-desktop@1x.jpg");
     background-position: center top;
   }
+
   .page-header__top .wrapper {
     width: 960px;
     margin: $margin;

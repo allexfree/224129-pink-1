@@ -4,7 +4,9 @@
 
 @media (min-width: 960px) {
   .page-main .wrapper--index {
-    position: relative; }
+    position: relative;
+  }
+
   .page-main > .wrapper--index::after {
     display: block;
     position: absolute;

@@ -29,10 +29,12 @@
   text-decoration: none;
   border: 3px solid $color-one;
   border-radius: 30px;
+
   &:hover {
     color: $color-five;
     background-color: $color-one;
   }
+
   &:active {
     color: rgba(210, 40, 86, 0.3);
     background-color: $color-one;
@@ -40,10 +42,6 @@
 }
 
 .intro__apps {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -56,6 +54,7 @@
 .intro__apps-item {
   width: 50px;
   height: 55px;
+
   img {
     width: $w;
   }
@@ -79,10 +78,6 @@
 
 @media (min-width: 660px) {
   .intro--index {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,17 +85,21 @@
     width: 50%;
     padding: 0 20px;
   }
+
   .intro__btn {
     margin: 0;
     width: 265px;
     padding: 15px;
   }
+
   .intro__apps {
     margin: 0;
   }
+
   .intro__description {
     width: 280px;
   }
+
   .intro--index::before {
     @include font-set(300, 1.2);
     font-size: $fsize-eight;
@@ -116,6 +115,7 @@
     width: $w;
     height: $h;
   }
+
   .intro__title {
     @include font-set(300, 1.2);
     font-size: $fsize-nine;
@@ -128,13 +128,16 @@
     margin: $margin;
     padding-right: 650px;
   }
+
   .intro {
     width: 960px;
     margin: $margin;
   }
+
   .intro::before {
     padding: 0 22px 50px;
   }
+
   .intro__apps {
     padding: 50px 40px;
   }

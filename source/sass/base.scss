@@ -28,17 +28,13 @@ html {
 
 body {
   font-family: $ffamily;
-  font-size:  $fsize-three;
+  font-size: $fsize-three;
   line-height: 1.6;
   min-width: $min-w;
   /*max-width: $max-w;*/
   min-height: $min-h;
   height: $h;
   margin: $margin;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   flex-direction: column;
   word-wrap: break-word;

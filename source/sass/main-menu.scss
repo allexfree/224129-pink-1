@@ -26,7 +26,7 @@
 }
 
 .main-menu--closed:active .main-menu__toggle::before {
-  background-color: #d22856;
+  background-color: $color-five;
   box-shadow: 0 8px 0 0 $color-five, 0 16px 0 0 $color-five;
 }
 
@@ -95,10 +95,12 @@
   padding: 25px 0;
   border-top: 1px solid $color-thirteen;
   border-bottom: 1px solid $color-fourteen;
+
   &:hover {
     border-top: 1px solid $color-fourteen;
     border-bottom: 1px solid $color-thirteen;
   }
+
   &:active {
     border-top: 1px solid $color-fourteen;
     border-bottom: 1px solid $color-thirteen;
@@ -109,32 +111,34 @@
   .main-menu__toggle {
     display: none;
   }
+
   .main-menu__list {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     justify-content: flex-end;
     background-color: transparent;
   }
+
   .main-menu__item:last-child {
     margin-right: 10px;
   }
+
   .main-menu__list a {
     @include font-set(400, 1);
     text-transform: none;
     border: none;
     margin-left: 80px;
   }
+
   .main-menu__list a:hover {
     color: $color-five;
     border: none;
   }
+
   .main-menu__list a:active {
     color: rgba(255, 255, 255, 0.3);
     border: none;
   }
+
   .main-menu__list a:focus {
     border-bottom: 2px solid $color-one;
   }

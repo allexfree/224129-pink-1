@@ -27,10 +27,12 @@
 .contacts__link {
   text-decoration: none;
 }
+
 .contacts__link:hover {
   text-decoration: underline;
   color: $color-two;
 }
+
 .contacts__link:active {
   text-decoration: none;
   color: rgba(40, 54, 69, 0.3);
@@ -46,18 +48,17 @@
     @include font-set(300, 1.2);
     font-size: $fsize-eight;
   }
+
   .contacts__items {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
   .contacts__item-block {
     width: 300px;
   }
+
   .contacts__item-block:last-child {
     width: 290px;
     margin: $margin;
@@ -69,13 +70,16 @@
     width: 960px;
     margin: $margin;
   }
+
   .contacts__item-block:nth-child(2n) {
     order: 1;
   }
+
   .contacts__title {
     @include font-set(300, 1.2);
     font-size: $fsize-nine;
   }
+
   .contacts__items {
     margin-top: 20px;
   }

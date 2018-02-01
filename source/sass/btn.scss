@@ -11,9 +11,11 @@
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
+
   &:hover {
     background-color: $color-four;
   }
+
   &:active {
     background-color: $color-four;
     color: rgba(255, 255, 255, 0.3);

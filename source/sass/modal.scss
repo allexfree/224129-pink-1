@@ -1,7 +1,7 @@
 .modal {
   @include wh($w, $h);
   position: fixed;
-  overflow: auto;
+  //overflow: auto;
   left: 0;
   top: 0;
   overflow: hidden;

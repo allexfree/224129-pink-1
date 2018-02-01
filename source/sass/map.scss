@@ -19,8 +19,8 @@
 }
 
 .map iframe {
-  border: none;
   @include wh ($w, $h);
+  border: none;
 }
 
 @media (min-width: 660px) {

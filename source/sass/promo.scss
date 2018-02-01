@@ -49,15 +49,18 @@
     @include font-set(300, 1.2);
     font-size: $fsize-eight;
   }
+
   .promo-slogan span {
     display: block;
     padding: 0 20px;
   }
+
   .promo__text {
     @include font-set(400, 1.6);
     font-size: $fsize-four;
     padding: 50px;
   }
+
   .promo__text::after {
     @include font-set(400, 1.6);
     font-size: $fsize-four;
@@ -72,6 +75,7 @@
     width: 960px;
     margin: $margin;
   }
+
   .promo-slogan {
     @include font-set(300, 1.2);
     font-size: $fsize-nine;
@@ -79,15 +83,19 @@
     margin: $margin;
     padding: 100px;
   }
+
   .promo-slogan span {
     padding: 0 115px;
   }
+
   .promo-slogan::after {
     display: none;
   }
+
   .promo__text::after {
     display: inline-block;
   }
+
   .promo__paragraph {
     padding: 60px 160px;
   }

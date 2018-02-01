@@ -98,63 +98,69 @@
     @include font-set(400, 1.6);
     font-size: $fsize-four;
   }
+
   .photo .wrapper {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 20px;
   }
+
   .photo-item--panorama {
     margin-bottom: 50px;
   }
+
   .photo-item--panorama::before {
     top: 55px;
   }
+
   .photo-item--panorama .photo__text {
     margin-bottom: 0;
     padding-bottom: 0;
   }
+
   .photo__description {
     position: relative;
   }
+
   .photo-item--panorama .photo__footer {
     position: absolute;
     top: 25px;
     right: 20px;
   }
+
   .photo-item--panorama .photo__likes {
     margin-right: 20px;
   }
+
   .photo-item {
     width: 300px;
   }
+
   .photo-item:nth-child(odd) {
     margin-right: 20px;
   }
+
   .photo__text {
     padding-bottom: 23px;
   }
+
   .photo-item:nth-child(3) .photo__text,
   .photo-item:nth-child(1) .photo__text {
     padding-bottom: 0;
   }
+
   .photo__footer {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: baseline;
   }
+
   .photo__likes {
     margin-left: 0;
   }
+
   .photo__title {
     @include font-set(400, 1.6);
     font-size: $fsize-four;
@@ -163,45 +169,49 @@
 
 @media (min-width: 960px) {
   .photo-item--panorama {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
   }
+
   .photo-item--panorama::before {
     right: 10px;
   }
+
   .photo-item--panorama .photo__description {
     width: 940px;
     align-self: center;
     padding: 25px 30px;
     box-sizing: border-box;
   }
+
   .photo .wrapper {
     width: 940px;
     margin: $margin;
     padding: 0;
     box-sizing: border-box;
   }
+
   .photo-item {
     width: 300px;
     height: 555px;
     justify-content: space-between;
   }
+
   .photo .photo-item {
     margin-right: 20px;
   }
+
   .photo-item:nth-child(3) {
     margin-bottom: 50px;
   }
+
   .photo-item:nth-child(3),
   .photo-item:nth-child(6) {
     margin-right: 0;
   }
+
   .photo__description {
     padding: 30px;
   }
