@@ -24,7 +24,7 @@
 
 .tariffs__table {
   min-width: 265%;
-  margin: 0;
+  //margin: 0;
   border-collapse: collapse;
   margin: 20px 0 70px 0;
   transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
@@ -109,7 +109,7 @@
   margin: 15px 15%;
   display: block;
   border: 0;
-  font: 0/0 a;
+  font: 0/0 "a";
   text-shadow: none;
   color: transparent;
 }
