@@ -143,7 +143,7 @@ label.arrows {
   display: none;
   cursor: pointer;
   transform: rotate(45deg);
-  border: 0;
+  font-family: "a";
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -159,27 +159,27 @@ label.arrows:active {
   border: 3px solid $color-sixteen;
 }
 
-input[type="radio"]#button-1:checked ~ .arrows#arrow-2,
-input[type="radio"]#button-2:checked ~ .arrows#arrow-3,
-input[type="radio"]#button-3:checked ~ .arrows#arrow-1 {
+input[type="radio"].button-1:checked ~ .arrows#arrow-2,
+input[type="radio"].button-2:checked ~ .arrows#arrow-3,
+input[type="radio"].button-3:checked ~ .arrows#arrow-1 {
   right: -55px;
   display: none;
   border-style: solid solid none none;
 }
 
-input[type="radio"]#button-2:checked ~ .arrows#arrow-1,
-input[type="radio"]#button-3:checked ~ .arrows#arrow-2,
-input[type="radio"]#button-1:checked ~ .arrows#arrow-3 {
+input[type="radio"].button-2:checked ~ .arrows#arrow-1,
+input[type="radio"].button-3:checked ~ .arrows#arrow-2,
+input[type="radio"].button-1:checked ~ .arrows#arrow-3 {
   left: -55px;
   display: none;
   border-style: none none solid solid;
 }
 
-input[type="radio"]#button-2:checked ~ .arrows#arrow-1 {
+input[type="radio"].button-2:checked ~ .arrows#arrow-1 {
   left: -19px;
 }
 
-input[type="radio"]#button-3:checked ~ .arrows#arrow-2 {
+input[type="radio"].button-3:checked ~ .arrows#arrow-2 {
   left: -37px;
 }
 
@@ -253,15 +253,15 @@ input[type="radio"]#button-3:checked ~ .arrows#arrow-2 {
     display: none;
   }
 
-  input[type="radio"]#button-1:checked ~ .arrows#arrow-2,
-  input[type="radio"]#button-2:checked ~ .arrows#arrow-3,
-  input[type="radio"]#button-3:checked ~ .arrows#arrow-1 {
+  input[type="radio"].button-1:checked ~ .arrows#arrow-2,
+  input[type="radio"].button-2:checked ~ .arrows#arrow-3,
+  input[type="radio"].button-3:checked ~ .arrows#arrow-1 {
     display: block;
   }
 
-  input[type="radio"]#button-2:checked ~ .arrows#arrow-1,
-  input[type="radio"]#button-3:checked ~ .arrows#arrow-2,
-  input[type="radio"]#button-1:checked ~ .arrows#arrow-3 {
+  input[type="radio"].button-2:checked ~ .arrows#arrow-1,
+  input[type="radio"].button-3:checked ~ .arrows#arrow-2,
+  input[type="radio"].button-1:checked ~ .arrows#arrow-3 {
     display: block;
   }
 }
