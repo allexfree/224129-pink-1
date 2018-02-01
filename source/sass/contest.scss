@@ -205,6 +205,7 @@
 
   .contest-form__group:nth-of-type(5) {
     order: 1;
+    padding: 40px;
   }
 
   .contest-form__block-btn {
@@ -238,10 +239,6 @@
     margin-left: -207px;
     background-color: $color-one;
     box-sizing: border-box;
-  }
-
-  .contest-form__group:nth-of-type(5) {
-    padding: 40px;
   }
 
   .contest-form__group:nth-of-type(5) .contest-form__title {

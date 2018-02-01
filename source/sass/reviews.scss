@@ -11,7 +11,7 @@
   position: relative;
 }
 
-.reviews__slider-wrap input[type=radio] {
+.reviews__slider-wrap input["type=radio"] {
   position: absolute;
   left: 50%;
   bottom: 15px;
@@ -29,7 +29,7 @@
   list-style: none;
   width: 500%;
   position: relative;
-  left: 0px;
+  left: 0;
   transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -107,30 +107,30 @@
   background-clip: padding-box;
 }
 
-.reviews__slider-wrap input[type=radio]#button-1:checked ~ .reviews-paginator > label[for=button-1] {
+.reviews__slider-wrap input["type=radio"]#button-1:checked ~ .reviews-paginator > label["for=button-1"] {
   border: 3px solid $color-two;
   background: transparent;
 }
 
-.reviews__slider-wrap input[type=radio]#button-2:checked ~ .reviews-paginator > label[for=button-2] {
+.reviews__slider-wrap input["type=radi"o"]#button-2:checked ~ .reviews-paginator > label["for=button-2"] {
   border: 3px solid $color-two;
   background: transparent;
 }
 
-.reviews__slider-wrap input[type=radio]#button-3:checked ~ .reviews-paginator > label[for=button-3] {
+.reviews__slider-wrap input["type=radio"]#button-3:checked ~ .reviews-paginator > label["for=button-3"] {
   border: 3px solid $color-two;
   background: transparent;
 }
 
-.reviews__slider-wrap input[type=radio]#button-1:checked ~ .reviews__slider > ul {
+.reviews__slider-wrap input["type=radio"]#button-1:checked ~ .reviews__slider > ul {
   left: 0;
 }
 
-.reviews__slider-wrap input[type=radio]#button-2:checked ~ .reviews__slider > ul {
+.reviews__slider-wrap input["type=radio"]#button-2:checked ~ .reviews__slider > ul {
   left: -100%;
 }
 
-.reviews__slider-wrap input[type=radio]#button-3:checked ~ .reviews__slider > ul {
+.reviews__slider-wrap input["type=radio"]#button-3:checked ~ .reviews__slider > ul {
   left: -200%;
 }
 
@@ -158,27 +158,27 @@ label.arrows:active {
   margin-top: -23px;
 }
 
-input[type=radio]#button-1:checked ~ .arrows#arrow-2,
-input[type=radio]#button-2:checked ~ .arrows#arrow-3,
-input[type=radio]#button-3:checked ~ .arrows#arrow-1 {
+input["type=radio"]#button-1:checked ~ .arrows#arrow-2,
+input["type=radio"]#button-2:checked ~ .arrows#arrow-3,
+input["type=radio"]#button-3:checked ~ .arrows#arrow-1 {
   right: -55px;
   display: none;
   border-style: solid solid none none;
 }
 
-input[type=radio]#button-2:checked ~ .arrows#arrow-1,
-input[type=radio]#button-3:checked ~ .arrows#arrow-2,
-input[type=radio]#button-1:checked ~ .arrows#arrow-3 {
+input["type=radio"]#button-2:checked ~ .arrows#arrow-1,
+input["type=radio"]#button-3:checked ~ .arrows#arrow-2,
+input["type=radio"]#button-1:checked ~ .arrows#arrow-3 {
   left: -55px;
   display: none;
   border-style: none none solid solid;
 }
 
-input[type=radio]#button-2:checked ~ .arrows#arrow-1 {
+input["type=radio"]#button-2:checked ~ .arrows#arrow-1 {
   left: -19px;
 }
 
-input[type=radio]#button-3:checked ~ .arrows#arrow-2 {
+input["type=radio"]#button-3:checked ~ .arrows#arrow-2 {
   left: -37px;
 }
 
@@ -252,15 +252,15 @@ input[type=radio]#button-3:checked ~ .arrows#arrow-2 {
     display: none;
   }
 
-  input[type=radio]#button-1:checked ~ .arrows#arrow-2,
-  input[type=radio]#button-2:checked ~ .arrows#arrow-3,
-  input[type=radio]#button-3:checked ~ .arrows#arrow-1 {
+  input["type=radio"]#button-1:checked ~ .arrows#arrow-2,
+  input["type=radio"]#button-2:checked ~ .arrows#arrow-3,
+  input["type=radio"]#button-3:checked ~ .arrows#arrow-1 {
     display: block;
   }
 
-  input[type=radio]#button-2:checked ~ .arrows#arrow-1,
-  input[type=radio]#button-3:checked ~ .arrows#arrow-2,
-  input[type=radio]#button-1:checked ~ .arrows#arrow-3 {
+  input["type=radio"]#button-2:checked ~ .arrows#arrow-1,
+  input["type=radio"]#button-3:checked ~ .arrows#arrow-2,
+  input["type=radio"]#button-1:checked ~ .arrows#arrow-3 {
     display: block;
   }
 }
