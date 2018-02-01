@@ -107,30 +107,30 @@
   background-clip: padding-box;
 }
 
-.reviews__slider-wrap input[type="radio"]#button-1:checked ~ .reviews-paginator > label[for="button-1"] {
+.reviews__slider-wrap input[type="radio"].button-1:checked ~ .reviews-paginator > label[for="button-1"] {
   border: 3px solid $color-two;
   background: transparent;
 }
 
-.reviews__slider-wrap input[type="radio"]#button-2:checked ~ .reviews-paginator > label[for="button-2"] {
+.reviews__slider-wrap input[type="radio"].button-2:checked ~ .reviews-paginator > label[for="button-2"] {
   border: 3px solid $color-two;
   background: transparent;
 }
 
-.reviews__slider-wrap input[type="radio"]#button-3:checked ~ .reviews-paginator > label[for="button-3"] {
+.reviews__slider-wrap input[type="radio"].button-3:checked ~ .reviews-paginator > label[for="button-3"] {
   border: 3px solid $color-two;
   background: transparent;
 }
 
-.reviews__slider-wrap input[type="radio"]#button-1:checked ~ .reviews__slider > ul {
+.reviews__slider-wrap input[type="radio"].button-1:checked ~ .reviews__slider > ul {
   left: 0;
 }
 
-.reviews__slider-wrap input[type="radio"]#button-2:checked ~ .reviews__slider > ul {
+.reviews__slider-wrap input[type="radio"].button-2:checked ~ .reviews__slider > ul {
   left: -100%;
 }
 
-.reviews__slider-wrap input[type="radio"]#button-3:checked ~ .reviews__slider > ul {
+.reviews__slider-wrap input[type="radio"].button-3:checked ~ .reviews__slider > ul {
   left: -200%;
 }
 
