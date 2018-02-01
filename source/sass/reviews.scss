@@ -112,7 +112,7 @@
   background: transparent;
 }
 
-.reviews__slider-wrap input[type="radi"o"].button-2:checked ~ .reviews-paginator > label[for="button-2"] {
+.reviews__slider-wrap input[type="radio"].button-2:checked ~ .reviews-paginator > label[for="button-2"] {
   border: 3px solid $color-two;
   background: transparent;
 }
