@@ -225,7 +225,7 @@ input[type="radio"].button-3:checked ~ .arrows:nth-of-type(2) {
     width: 800px;
   }
 
-  .reviews__slider-wrap:before {
+  .reviews__slider-wrap::before {
     display: block;
     content: "";
     width: 80px;
