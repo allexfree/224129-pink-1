@@ -181,8 +181,9 @@
 
 @media (min-width: 660px) {
   .tariffs__inner {
+    box-sizing: border-box;
     width: 660px;
-    padding: 0 0 70px;
+    padding: 0 20px 70px 0;
   }
 
   .tariffs__inner .slider-pagination {
@@ -239,6 +240,7 @@
 
 @media (min-width: 960px) {
   .tariffs__inner {
+    padding-right: 20px;
     width: 960px;
   }
 

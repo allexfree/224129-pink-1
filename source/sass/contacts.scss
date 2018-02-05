@@ -10,6 +10,8 @@
 .contacts__title {
   font-size: $fsize-six;
   margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .contacts__item-title {
@@ -67,7 +69,7 @@
 
 @media (min-width: 960px) {
   .contacts__wrapper {
-    width: 960px;
+    width: 940px;
     margin: $margin;
   }
 

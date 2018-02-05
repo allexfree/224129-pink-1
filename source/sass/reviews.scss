@@ -222,7 +222,11 @@ input[type="radio"].button-3:checked ~ .arrows:nth-of-type(2) {
   }
 
   .reviews__slider-wrap {
-    width: 800px;
+    width: 760px;
+  }
+
+  .reviews__slider ul {
+    overflow-x: hidden;
   }
 
   .reviews__slider-wrap::before {
