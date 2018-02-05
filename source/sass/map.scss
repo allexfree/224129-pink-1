@@ -31,6 +31,8 @@
 
 @media (min-width: 960px) {
   .map {
+    width: 960px;
+    margin: $margin;
     height: 500px;
   }
 }

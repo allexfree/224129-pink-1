@@ -1,7 +1,7 @@
 .intro--index {
   position: relative;
   min-height: 730px;
-  padding: 460px 20px 35px 20px;
+  padding: 420px 20px 35px 20px;
   box-sizing: border-box;
 }
 
@@ -79,6 +79,8 @@
 @media (min-width: 660px) {
   .intro--index {
     display: flex;
+    flex-basis: 0%;
+    flex-shrink: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -90,14 +92,17 @@
     margin: 0;
     width: 265px;
     padding: 15px;
+    z-index: 5;
   }
 
   .intro__apps {
     margin: 0;
+    z-index: 5;
   }
 
   .intro__description {
     width: 280px;
+    z-index: 5;
   }
 
   .intro--index::before {
@@ -116,6 +121,17 @@
     height: $h;
   }
 
+  .intro--index::after {
+    @include wh(660px, 545px);
+    display: block;
+    position: absolute;
+    top: 185px;
+    left: -10px;
+    content: "";
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+  }
+
   .intro__title {
     @include font-set(300, 1.2);
     font-size: $fsize-nine;
@@ -127,6 +143,14 @@
     width: 960px;
     margin: $margin;
     padding-right: 650px;
+  }
+
+  .intro--index::after {
+    @include wh(885px, 645px);
+    top: 85px;
+    left: 0;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
   }
 
   .intro {

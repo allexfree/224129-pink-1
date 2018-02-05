@@ -4,11 +4,11 @@
   color: $color-two;
 }
 
-::-moz-placeholder {
+/*::-moz-placeholder {
   @include font-set(400, 2.1);
   font-size: $fsize-four;
   color: $color-two;
-}
+}*/
 
 :-moz-placeholder {
   @include font-set(400, 2.1);
@@ -41,6 +41,11 @@ body {
   position: relative;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+img {
+  max-width: $w;
+  height: auto;
 }
 
 .visually-hidden {
