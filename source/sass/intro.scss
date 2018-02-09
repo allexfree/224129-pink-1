@@ -78,12 +78,12 @@
 
 @media (min-width: 320px) and (max-width: 659px) and (min-resolution: 144dpi),
   (min-width: 320px) and (max-width: 659px) and (min-resolution: 1.5dppx) {
-    .intro--index::before {
-      background-image: url("../img/iphone-hand-mobile@2x.png");
-      background-repeat: no-repeat;
-      background-size: 258px auto;
-    }
+  .intro--index::before {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: 258px auto;
   }
+}
 
 @media (min-width: 660px) {
   .intro--index {
@@ -149,13 +149,13 @@
 
 @media (min-width: 660px) and (max-width: 959px) and (min-resolution: 144dpi),
   (min-width: 660px) and (max-width: 959px) and (min-resolution: 1.5dppx) {
-    .intro--index::after {
-      background-image: url("../img/iphone-hand-tablet@2x.png");
-      background-repeat: no-repeat;
-      background-size: 700px auto;
-      top: 186px;
-    }
+  .intro--index::after {
+    background-image: url("../img/iphone-hand-tablet@2x.png");
+    background-repeat: no-repeat;
+    background-size: 700px auto;
+    top: 186px;
   }
+}
 
 @media (min-width: 960px) {
   .intro--index {
@@ -194,9 +194,9 @@
 
 @media (min-width: 960px) and (min-resolution: 144dpi),
   (min-width: 960px) and (min-resolution: 1.5dppx) {
-    .intro--index::after {
-      background-image: url("../img/iphone-hand-desktop@2x.png");
-      background-repeat: no-repeat;
-      background-size: 1050px auto;
-    }
+  .intro--index::after {
+    background-image: url("../img/iphone-hand-desktop@2x.png");
+    background-repeat: no-repeat;
+    background-size: 1050px auto;
   }
+}

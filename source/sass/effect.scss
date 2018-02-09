@@ -60,12 +60,12 @@
 
 @media (min-width: 660px) and (max-width: 959px) and (min-resolution: 144dpi),
   (min-width: 660px) and (max-width: 959px) and (min-resolution: 1.5dppx) {
-    .effect__left-block {
-      background-image: url("../img/time-tablet@2x.png");
-      background-repeat: no-repeat;
-      background-size: 238px auto;
-    }
+  .effect__left-block {
+    background-image: url("../img/time-tablet@2x.png");
+    background-repeat: no-repeat;
+    background-size: 238px auto;
   }
+}
 
 @media (min-width: 960px) {
   .effect {
@@ -112,9 +112,9 @@
 
 @media (min-width: 660px) and (max-width: 959px) and (min-resolution: 144dpi),
   (min-width: 660px) and (max-width: 959px) and (min-resolution: 1.5dppx) {
-    .effect__left-block {
-      background-image: url("../img/time-desktop@2x.png");
-      background-repeat: no-repeat;
-      background-size: 298px auto;
-    }
+  .effect__left-block {
+    background-image: url("../img/time-desktop@2x.png");
+    background-repeat: no-repeat;
+    background-size: 298px auto;
   }
+}
