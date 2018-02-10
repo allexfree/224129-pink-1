@@ -1,6 +1,18 @@
 .map {
-  height: 200px;
   position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $w;
+  height: $h;
+  border: none;
 }
 
 .map::before {
@@ -9,30 +21,25 @@
   position: absolute;
   top: -1px;
   left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: $w;
   height: 200px;
-  margin-left: auto;
   background-image: url("../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 5;
 }
 
-.map iframe {
-  @include wh ($w, $h);
-  border: none;
-}
-
 @media (min-width: 660px) {
   .map {
-    height: 350px;
+    padding-bottom: 50%;
   }
 }
 
 @media (min-width: 960px) {
   .map {
-    width: 960px;
-    margin: $margin;
-    height: 500px;
+    padding-bottom: 26%;
   }
 }

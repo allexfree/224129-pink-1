@@ -7,25 +7,30 @@
 @media (min-width: 660px) {
   .effect {
     display: flex;
-    justify-content: center;
+    //justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
     padding: 50px 20px;
   }
 
   .effect__container {
     display: flex;
+    margin: 0 auto;
   }
 
   .effect__left-block {
     display: block;
-    background-image: url("../img/time.png");
+    background-image: url("../img/time-tablet@1x.png");
+    background-repeat: no-repeat;
     width: 238px;
     height: 276px;
   }
 
   .effect .wrapper {
     width: 300px;
-    margin-left: 60px;
+    margin-right: auto;
+    padding-left: 10%;
     text-align: left;
   }
 
@@ -56,6 +61,15 @@
   }
 }
 
+@media (min-width: 660px) and (min-resolution: 144dpi),
+  (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .effect__left-block {
+    background-image: url("../img/time-tablet@2x.png");
+    background-repeat: no-repeat;
+    background-size: 238px auto;
+  }
+}
+
 @media (min-width: 960px) {
   .effect {
     background-color: $color-six;
@@ -63,23 +77,21 @@
 
   .effect__container {
     width: 960px;
-    margin: $margin;
     display: flex;
     justify-content: space-between;
   }
 
   .effect__left-block {
-    margin-left: 20px;
-    padding-right: 20px;
-    background-image: url("../img/time1.png");
+    background-image: url("../img/time-desktop@1x.png");
     background-repeat: no-repeat;
     width: 298px;
     height: 345px;
   }
 
   .effect .wrapper {
-    width: 530px;
-    margin-right: 75px;
+    width: 570px;
+    margin-right: auto;
+    padding-left: 5%;
     padding-top: 50px;
   }
 
@@ -96,5 +108,14 @@
   .effect__link {
     @include font-set(400, 1.6);
     font-size: $fsize-four;
+  }
+}
+
+@media (min-width: 960px) and (min-resolution: 144dpi),
+  (min-width: 960px) and (min-resolution: 1.5dppx) {
+  .effect__left-block {
+    background-image: url("../img/time-desktop@2x.png");
+    background-repeat: no-repeat;
+    background-size: 298px auto;
   }
 }
