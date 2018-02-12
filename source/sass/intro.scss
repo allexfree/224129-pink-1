@@ -76,7 +76,12 @@
   padding: 30px 30px;
 }
 
+<<<<<<< HEAD
 @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+=======
+@media (min-width: 320px) and (max-width: 659px) and (min-resolution: 144dpi),
+  (min-width: 320px) and (max-width: 659px) and (min-resolution: 1.5dppx) {
+>>>>>>> module6-task1
   .intro--index::before {
     background-image: url("../img/iphone-hand-mobile@2x.png");
     background-repeat: no-repeat;
@@ -87,8 +92,6 @@
 @media (min-width: 660px) {
   .intro--index {
     display: flex;
-    flex-basis: 0%;
-    flex-shrink: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -97,7 +100,7 @@
   }
 
   .intro__btn {
-    margin: 0;
+    margin: 200px 0 0 0;
     width: 265px;
     padding: 15px;
     z-index: 5;
@@ -121,7 +124,9 @@
     box-sizing: border-box;
     content: "Взгляните на жизнь иначе!";
     display: block;
-    position: static;
+    position: absolute;
+    top: 200px;
+    left: 0;
     background-image: none;
     padding: 0 22px 40px;
     margin: $margin;
@@ -133,8 +138,13 @@
     @include wh(660px, 545px);
     display: block;
     position: absolute;
+<<<<<<< HEAD
     top: 186px;
     left: -10px;
+=======
+    top: 185px;
+    left: 0;
+>>>>>>> module6-task1
     content: "";
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
@@ -146,12 +156,21 @@
   }
 }
 
+<<<<<<< HEAD
 @media (min-width: 660px) and (min-resolution: 144dpi),
   (min-width: 660px) and (min-resolution: 1.5dppx) {
+=======
+@media (min-width: 660px) and (max-width: 959px) and (min-resolution: 144dpi),
+  (min-width: 660px) and (max-width: 959px) and (min-resolution: 1.5dppx) {
+>>>>>>> module6-task1
   .intro--index::after {
     background-image: url("../img/iphone-hand-tablet@2x.png");
     background-repeat: no-repeat;
     background-size: 700px auto;
+<<<<<<< HEAD
+=======
+    top: 186px;
+>>>>>>> module6-task1
   }
 }
 
@@ -176,7 +195,13 @@
   }
 
   .intro::before {
-    padding: 0 22px 50px;
+    top: 115px;
+    left: -315px;
+    padding: 0 360px 50px;
+  }
+
+  .intro__btn {
+    margin: 150px 0 0 0;
   }
 
   .intro__apps {

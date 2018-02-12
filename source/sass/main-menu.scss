@@ -1,6 +1,6 @@
 .main-menu__toggle {
   position: absolute;
-  top: 20px;
+  top: 35px;
   right: 20px;
   width: 60px;
   height: 28px;
@@ -36,7 +36,11 @@
 }
 
 .main-menu--opened .main-menu__toggle {
+<<<<<<< HEAD
   top: 10px;
+=======
+  top: 20px;
+>>>>>>> module6-task1
   right: 15px;
   z-index: 15;
 }
@@ -73,7 +77,11 @@
 .main-menu__list {
   display: block;
   position: absolute;
+<<<<<<< HEAD
   top: 70px;
+=======
+  top: 95px;
+>>>>>>> module6-task1
   left: 0;
   width: $w;
   padding: 0;
@@ -108,6 +116,7 @@
 
 @media (min-width: 660px) {
   .main-menu__toggle {
+<<<<<<< HEAD
     top: 35px;
   }
 
@@ -117,6 +126,17 @@
 
   .main-menu--opened .main-menu__toggle {
     top: 25px;
+=======
+    top: 40px;
+  }
+
+  .main-menu--opened .main-menu__toggle {
+    top: 29px;
+  }
+
+  .main-menu__list {
+    top: 108px;
+>>>>>>> module6-task1
   }
 }
 
@@ -127,14 +147,26 @@
 
   .main-menu__list {
     position: static;
+<<<<<<< HEAD
     display: flex;
     justify-content: flex-end;
     background-color: transparent;
     padding-top: 25px;
+=======
+    width: 725px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .main-menu__item:last-child {
+    margin-right: 20px;
+>>>>>>> module6-task1
   }
 
   .main-menu__list a {
-    @include font-set(400, 1);
+    font-weight: normal;
     text-transform: none;
     border-top: transparent;
     border-bottom: 2px solid transparent;

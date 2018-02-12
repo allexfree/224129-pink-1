@@ -14,10 +14,19 @@
 
 .page-header__top {
   background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px 0 20px;
 }
 
+<<<<<<< HEAD
 .page-header__wrapper {
   padding: 20px 0 20px 20px;
+=======
+.page-header__logo {
+  display: block;
+  width: 74px;
+  height: 23px;
+  margin: 20px;
+>>>>>>> module6-task1
 }
 
 .page-header__logo--mobile {
@@ -57,8 +66,21 @@
     background-size: cover;
   }
 
+<<<<<<< HEAD
   .page-header__wrapper {
     padding-bottom: 40px;
+=======
+  .page-header__top {
+    padding: 25px 0 20px;
+  }
+
+  .page-header__logo {
+    margin: 0 0 40px 20px;
+  }
+
+  .page-header__logo--mobile {
+    display: none;
+>>>>>>> module6-task1
   }
 
   .page-header__logo--tablet {
@@ -73,11 +95,14 @@
       fill: rgba(255, 255, 255, 0.3);
     }
   }
+<<<<<<< HEAD
 
   .page-header__logo--mobile,
   .page-header__logo--desktop {
     display: none;
   }
+=======
+>>>>>>> module6-task1
 }
 
 @media (min-width: 660px) and (min-resolution: 144dpi),
@@ -97,6 +122,7 @@
     padding: 0;
   }
 
+<<<<<<< HEAD
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -111,17 +137,45 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+=======
+  .page-header__top {
+    padding: 0;
+  }
+
+  .page-header__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: $margin;
+    padding: 10px 0;
+  }
+
+  .page-header__logo {
+    margin-top: 10px;
+  }
+
+  .page-header__logo--tablet {
+    display: none;
+  }
+
+  .page-header__logo--desktop {
+    display: block;
+    fill: $color-one;
+
+    &:hover {
+      fill: $color-five;
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+>>>>>>> module6-task1
   }
 
   .page-header--competition,
   .page-header--photo {
     background-image: url("../img/bg-desktop@1x.jpg");
     background-position: center top;
-  }
-
-  .page-header__top .wrapper {
-    width: 960px;
-    margin: $margin;
   }
 }
 

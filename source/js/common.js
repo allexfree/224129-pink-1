@@ -5,6 +5,10 @@ $(document).ready(function() {
     $("nav").toggleClass("main-menu--closed");
   }
   $(".main-menu__toggle").on("click", function() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> module6-task1
     $(".main-menu__list").css("display", "block");
     $(".page-header__top").css("background-color", "#283645");
     $("nav").removeClass("main-menu--closed");
