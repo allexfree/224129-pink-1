@@ -8,40 +8,26 @@
   .effect {
     display: flex;
     //justify-content: center;
-<<<<<<< HEAD
-    margin-left: auto;
-    margin-right: auto;
-=======
->>>>>>> module6-task1
     box-sizing: border-box;
     padding: 50px 20px;
   }
 
   .effect__container {
     display: flex;
-<<<<<<< HEAD
-    margin: 0 auto;
-=======
     margin-left: auto;
     margin-right: auto;
->>>>>>> module6-task1
   }
 
   .effect__left-block {
     display: block;
     background-image: url("../img/time-tablet@1x.png");
-<<<<<<< HEAD
-    background-repeat: no-repeat;
-=======
->>>>>>> module6-task1
     width: 238px;
     height: 276px;
   }
 
   .effect .wrapper {
     width: 300px;
-    margin-right: auto;
-    padding-left: 10%;
+    margin-left: 60px;
     text-align: left;
   }
 
@@ -72,13 +58,8 @@
   }
 }
 
-<<<<<<< HEAD
-@media (min-width: 660px) and (min-resolution: 144dpi),
-  (min-width: 660px) and (min-resolution: 1.5dppx) {
-=======
 @media (min-width: 660px) and (max-width: 959px) and (min-resolution: 144dpi),
   (min-width: 660px) and (max-width: 959px) and (min-resolution: 1.5dppx) {
->>>>>>> module6-task1
   .effect__left-block {
     background-image: url("../img/time-tablet@2x.png");
     background-repeat: no-repeat;
@@ -93,16 +74,14 @@
 
   .effect__container {
     width: 960px;
+    margin: $margin;
     display: flex;
     justify-content: space-between;
   }
 
   .effect__left-block {
-<<<<<<< HEAD
-=======
     margin-left: 20px;
     padding-right: 20px;
->>>>>>> module6-task1
     background-image: url("../img/time-desktop@1x.png");
     background-repeat: no-repeat;
     width: 298px;
@@ -110,14 +89,8 @@
   }
 
   .effect .wrapper {
-<<<<<<< HEAD
-    width: 570px;
-    margin-right: auto;
-    padding-left: 5%;
-=======
     width: 460px;
     margin-right: 75px;
->>>>>>> module6-task1
     padding-top: 50px;
   }
 
@@ -137,13 +110,8 @@
   }
 }
 
-<<<<<<< HEAD
-@media (min-width: 960px) and (min-resolution: 144dpi),
-  (min-width: 960px) and (min-resolution: 1.5dppx) {
-=======
 @media (min-width: 660px) and (max-width: 959px) and (min-resolution: 144dpi),
   (min-width: 660px) and (max-width: 959px) and (min-resolution: 1.5dppx) {
->>>>>>> module6-task1
   .effect__left-block {
     background-image: url("../img/time-desktop@2x.png");
     background-repeat: no-repeat;

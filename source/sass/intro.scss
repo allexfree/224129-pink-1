@@ -76,12 +76,8 @@
   padding: 30px 30px;
 }
 
-<<<<<<< HEAD
-@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-=======
 @media (min-width: 320px) and (max-width: 659px) and (min-resolution: 144dpi),
   (min-width: 320px) and (max-width: 659px) and (min-resolution: 1.5dppx) {
->>>>>>> module6-task1
   .intro--index::before {
     background-image: url("../img/iphone-hand-mobile@2x.png");
     background-repeat: no-repeat;
@@ -138,13 +134,8 @@
     @include wh(660px, 545px);
     display: block;
     position: absolute;
-<<<<<<< HEAD
-    top: 186px;
-    left: -10px;
-=======
     top: 185px;
     left: 0;
->>>>>>> module6-task1
     content: "";
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
@@ -156,21 +147,13 @@
   }
 }
 
-<<<<<<< HEAD
-@media (min-width: 660px) and (min-resolution: 144dpi),
-  (min-width: 660px) and (min-resolution: 1.5dppx) {
-=======
 @media (min-width: 660px) and (max-width: 959px) and (min-resolution: 144dpi),
   (min-width: 660px) and (max-width: 959px) and (min-resolution: 1.5dppx) {
->>>>>>> module6-task1
   .intro--index::after {
     background-image: url("../img/iphone-hand-tablet@2x.png");
     background-repeat: no-repeat;
     background-size: 700px auto;
-<<<<<<< HEAD
-=======
     top: 186px;
->>>>>>> module6-task1
   }
 }
 

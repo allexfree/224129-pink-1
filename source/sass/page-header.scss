@@ -17,16 +17,11 @@
   padding: 15px 0 20px;
 }
 
-<<<<<<< HEAD
-.page-header__wrapper {
-  padding: 20px 0 20px 20px;
-=======
 .page-header__logo {
   display: block;
   width: 74px;
   height: 23px;
   margin: 20px;
->>>>>>> module6-task1
 }
 
 .page-header__logo--mobile {
@@ -66,10 +61,6 @@
     background-size: cover;
   }
 
-<<<<<<< HEAD
-  .page-header__wrapper {
-    padding-bottom: 40px;
-=======
   .page-header__top {
     padding: 25px 0 20px;
   }
@@ -80,7 +71,6 @@
 
   .page-header__logo--mobile {
     display: none;
->>>>>>> module6-task1
   }
 
   .page-header__logo--tablet {
@@ -95,14 +85,6 @@
       fill: rgba(255, 255, 255, 0.3);
     }
   }
-<<<<<<< HEAD
-
-  .page-header__logo--mobile,
-  .page-header__logo--desktop {
-    display: none;
-  }
-=======
->>>>>>> module6-task1
 }
 
 @media (min-width: 660px) and (min-resolution: 144dpi),
@@ -118,26 +100,12 @@
 }
 
 @media (min-width: 960px) {
-  .page-header__top {
-    padding: 0;
-  }
-
-<<<<<<< HEAD
-  .page-header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 960px;
-    margin: $margin;
-    padding: 20px 20px 40px;
-    box-sizing: border-box;
-  }
-
   .page-header--index {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-=======
+  }
+
   .page-header__top {
     padding: 0;
   }
@@ -169,7 +137,6 @@
     &:active {
       fill: rgba(255, 255, 255, 0.3);
     }
->>>>>>> module6-task1
   }
 
   .page-header--competition,
