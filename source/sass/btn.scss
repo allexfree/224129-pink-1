@@ -1,0 +1,23 @@
+.btn {
+  @include font-set(700, 1.6);
+  font-size: $fsize-four;
+  color: $color-one;
+  display: block;
+  background-color: $color-three;
+  border: none;
+  border-radius: 2px;
+  width: 280px;
+  padding: 25px 0;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-four;
+  }
+
+  &:active {
+    background-color: $color-four;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

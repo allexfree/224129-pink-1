@@ -1,0 +1,65 @@
+::-webkit-input-placeholder {
+  @include font-set(400, 2.1);
+  font-size: $fsize-four;
+  color: $color-two;
+}
+
+/*::-moz-placeholder {
+  @include font-set(400, 2.1);
+  font-size: $fsize-four;
+  color: $color-two;
+}*/
+
+:-moz-placeholder {
+  @include font-set(400, 2.1);
+  font-size: $fsize-four;
+  color: $color-two;
+}
+
+:-ms-input-placeholder {
+  @include font-set(400, 2.1);
+  font-size: $fsize-four;
+  color: $color-two;
+}
+
+html {
+  height: $h;
+}
+
+body {
+  font-family: $ffamily;
+  font-size: $fsize-three;
+  line-height: 1.6;
+  min-width: $min-w;
+  max-width: $max-w;
+  min-height: $min-h;
+  height: $h;
+  margin: $margin;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: $w;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+[hidden] {
+  display: none;
+}
+
+.wrapper {
+  position: relative;
+}

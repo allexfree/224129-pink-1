@@ -1,0 +1,102 @@
+.promo-slogan {
+  @include font-set(300, 1.6);
+  font-size: $fsize-six;
+  color: $color-two;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 50px 0 0 0;
+  padding: 0 20px;
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+.promo-slogan span {
+  display: block;
+  padding-top: 20px;
+}
+
+.promo-slogan::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  content: "";
+  width: $w;
+  height: $h;
+  background-image: url("../img/bg-triangle-white-desktop.svg");
+  background-repeat: no-repeat;
+  z-index: -5;
+}
+
+.promo__text {
+  @include font-set(400, 2.1);
+  font-size: $fsize-two;
+  color: $color-two;
+  text-align: center;
+  padding: 50px 20px 0;
+}
+
+.promo__paragraph {
+  @include font-set(400, 2.1);
+  font-size: $fsize-two;
+  color: $color-two;
+  text-align: center;
+  padding: 60px 35px;
+}
+
+@media (min-width: 660px) {
+  .promo-slogan {
+    @include font-set(300, 1.2);
+    font-size: $fsize-eight;
+  }
+
+  .promo-slogan span {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .promo__text {
+    @include font-set(400, 1.6);
+    font-size: $fsize-four;
+    padding: 50px;
+  }
+
+  .promo__text::after {
+    @include font-set(400, 1.6);
+    font-size: $fsize-four;
+    color: $color-two;
+    display: block;
+    content: "Пожалуйста, заполните форму ниже:";
+  }
+}
+
+@media (min-width: 960px) {
+  .promo {
+    width: 960px;
+    margin: $margin;
+  }
+
+  .promo-slogan {
+    @include font-set(300, 1.2);
+    font-size: $fsize-nine;
+    width: 960px;
+    margin: $margin;
+    padding: 100px;
+  }
+
+  .promo-slogan span {
+    padding: 0 115px;
+  }
+
+  .promo-slogan::after {
+    display: none;
+  }
+
+  .promo__text::after {
+    display: inline-block;
+  }
+
+  .promo__paragraph {
+    padding: 60px 160px;
+  }
+}

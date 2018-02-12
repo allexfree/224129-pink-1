@@ -1,0 +1,194 @@
+.intro--index {
+  position: relative;
+  min-height: 730px;
+  padding: 420px 20px 35px 20px;
+  box-sizing: border-box;
+}
+
+.intro--index::before {
+  @include wh(258px, 286px);
+  display: block;
+  position: absolute;
+  top: 105px;
+  left: 0;
+  content: "";
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
+.intro__btn {
+  @include font-set(bold, 1);
+  font-size: $fsize-four;
+  color: $color-one;
+  text-align: center;
+  display: block;
+  width: 280px;
+  padding: 20px 0;
+  margin: $margin;
+  background-color: transparent;
+  text-decoration: none;
+  border: 3px solid $color-one;
+  border-radius: 30px;
+
+  &:hover {
+    color: $color-five;
+    background-color: $color-one;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: $color-one;
+  }
+}
+
+.intro__apps {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 210px;
+  margin: $margin;
+  padding: 40px;
+  text-align: center;
+}
+
+.intro__apps-item {
+  width: 50px;
+  height: 55px;
+
+  img {
+    width: $w;
+  }
+}
+
+.intro__description {
+  @include font-set(300, 1.7);
+  font-size: $fsize-two;
+  color: $color-one;
+  text-align: center;
+  margin: 0;
+}
+
+.intro__title {
+  @include font-set(300, 1.2);
+  font-size: $fsize-six;
+  color: $color-one;
+  text-align: center;
+  padding: 30px 30px;
+}
+
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  .intro--index::before {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: 258px auto;
+  }
+}
+
+@media (min-width: 660px) {
+  .intro--index {
+    display: flex;
+    flex-basis: 0%;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .intro__btn {
+    margin: 0;
+    width: 265px;
+    padding: 15px;
+    z-index: 5;
+  }
+
+  .intro__apps {
+    margin: 0;
+    z-index: 5;
+  }
+
+  .intro__description {
+    width: 280px;
+    z-index: 5;
+  }
+
+  .intro--index::before {
+    @include font-set(300, 1.2);
+    font-size: $fsize-eight;
+    color: $color-one;
+    text-align: center;
+    box-sizing: border-box;
+    content: "Взгляните на жизнь иначе!";
+    display: block;
+    position: static;
+    background-image: none;
+    padding: 0 22px 40px;
+    margin: $margin;
+    width: $w;
+    height: $h;
+  }
+
+  .intro--index::after {
+    @include wh(660px, 545px);
+    display: block;
+    position: absolute;
+    top: 186px;
+    left: -10px;
+    content: "";
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  .intro__title {
+    @include font-set(300, 1.2);
+    font-size: $fsize-nine;
+  }
+}
+
+@media (min-width: 660px) and (min-resolution: 144dpi),
+  (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .intro--index::after {
+    background-image: url("../img/iphone-hand-tablet@2x.png");
+    background-repeat: no-repeat;
+    background-size: 700px auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .intro--index {
+    width: 960px;
+    margin: $margin;
+    padding-right: 650px;
+  }
+
+  .intro--index::after {
+    @include wh(885px, 645px);
+    top: 85px;
+    left: 0;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  .intro {
+    width: 960px;
+    margin: $margin;
+  }
+
+  .intro::before {
+    padding: 0 22px 50px;
+  }
+
+  .intro__apps {
+    padding: 50px 40px;
+  }
+}
+
+@media (min-width: 960px) and (min-resolution: 144dpi),
+  (min-width: 960px) and (min-resolution: 1.5dppx) {
+  .intro--index::after {
+    background-image: url("../img/iphone-hand-desktop@2x.png");
+    background-repeat: no-repeat;
+    background-size: 1050px auto;
+  }
+}

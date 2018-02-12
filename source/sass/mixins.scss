@@ -1,0 +1,9 @@
+@mixin font-set ($font-weight, $line-height) {
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin wh ($width, $height) {
+  width: $width;
+  height: $height;
+}
