@@ -1,6 +1,6 @@
 .main-menu__toggle {
   position: absolute;
-  top: 20px;
+  top: 35px;
   right: 20px;
   width: 60px;
   height: 28px;
@@ -36,7 +36,7 @@
 }
 
 .main-menu--opened .main-menu__toggle {
-  top: 10px;
+  top: 20px;
   right: 15px;
   z-index: 15;
 }
@@ -73,7 +73,7 @@
 .main-menu__list {
   display: block;
   position: absolute;
-  top: 70px;
+  top: 95px;
   left: 0;
   width: $w;
   padding: 0;
@@ -108,15 +108,15 @@
 
 @media (min-width: 660px) {
   .main-menu__toggle {
-    top: 35px;
-  }
-
-  .main-menu__list {
-    top: 100px;
+    top: 40px;
   }
 
   .main-menu--opened .main-menu__toggle {
-    top: 25px;
+    top: 29px;
+  }
+
+  .main-menu__list {
+    top: 108px;
   }
 }
 
@@ -127,35 +127,35 @@
 
   .main-menu__list {
     position: static;
+    width: 725px;
+    background-color: transparent;
     display: flex;
     justify-content: flex-end;
-    background-color: transparent;
-    padding-top: 25px;
+    margin-left: auto;
+  }
+
+  .main-menu__item:last-child {
+    margin-right: 20px;
   }
 
   .main-menu__list a {
-    @include font-set(400, 1);
+    font-weight: normal;
     text-transform: none;
-    border-top: transparent;
-    border-bottom: 2px solid transparent;
+    border: none;
     margin-left: 80px;
-    padding: 0 0 10px 0;
   }
 
   .main-menu__list a:hover {
     color: $color-five;
-    border-top: transparent;
-    border-bottom: 2px solid transparent;
+    border: none;
   }
 
   .main-menu__list a:active {
     color: rgba(255, 255, 255, 0.3);
-    border-top: transparent;
-    border-bottom: 2px solid transparent;
+    border: none;
   }
 
   .main-menu__list a:focus {
-    border-top: transparent;
     border-bottom: 2px solid $color-one;
   }
 }

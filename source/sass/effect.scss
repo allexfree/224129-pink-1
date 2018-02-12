@@ -8,29 +8,26 @@
   .effect {
     display: flex;
     //justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     box-sizing: border-box;
     padding: 50px 20px;
   }
 
   .effect__container {
     display: flex;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .effect__left-block {
     display: block;
     background-image: url("../img/time-tablet@1x.png");
-    background-repeat: no-repeat;
     width: 238px;
     height: 276px;
   }
 
   .effect .wrapper {
     width: 300px;
-    margin-right: auto;
-    padding-left: 10%;
+    margin-left: 60px;
     text-align: left;
   }
 
@@ -61,8 +58,8 @@
   }
 }
 
-@media (min-width: 660px) and (min-resolution: 144dpi),
-  (min-width: 660px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (max-width: 959px) and (min-resolution: 144dpi),
+  (min-width: 660px) and (max-width: 959px) and (min-resolution: 1.5dppx) {
   .effect__left-block {
     background-image: url("../img/time-tablet@2x.png");
     background-repeat: no-repeat;
@@ -77,11 +74,14 @@
 
   .effect__container {
     width: 960px;
+    margin: $margin;
     display: flex;
     justify-content: space-between;
   }
 
   .effect__left-block {
+    margin-left: 20px;
+    padding-right: 20px;
     background-image: url("../img/time-desktop@1x.png");
     background-repeat: no-repeat;
     width: 298px;
@@ -89,9 +89,8 @@
   }
 
   .effect .wrapper {
-    width: 570px;
-    margin-right: auto;
-    padding-left: 5%;
+    width: 460px;
+    margin-right: 75px;
     padding-top: 50px;
   }
 
@@ -111,8 +110,8 @@
   }
 }
 
-@media (min-width: 960px) and (min-resolution: 144dpi),
-  (min-width: 960px) and (min-resolution: 1.5dppx) {
+@media (min-width: 660px) and (max-width: 959px) and (min-resolution: 144dpi),
+  (min-width: 660px) and (max-width: 959px) and (min-resolution: 1.5dppx) {
   .effect__left-block {
     background-image: url("../img/time-desktop@2x.png");
     background-repeat: no-repeat;
