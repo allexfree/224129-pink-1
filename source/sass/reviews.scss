@@ -1,10 +1,11 @@
 .reviews {
   position: relative;
+  z-index: 1;
 }
 
 .reviews__inner {
   min-width: $min-w;
-  padding: 60px 0 40px;
+  padding: 50px 0 40px;
   margin: $margin;
 }
 
@@ -32,6 +33,7 @@
   display: flex;
   list-style: none;
   width: 500%;
+  margin: 0;
   position: relative;
   left: 0;
   transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
@@ -63,7 +65,8 @@
 }
 
 .reviews__text {
-  padding: 60px 0 0;
+  @include font-set(400, 1.9);
+  padding: 45px 0 0;
   margin: 0 5%;
 }
 
@@ -75,10 +78,11 @@
   display: block;
   position: absolute;
   left: 0;
-  top: 445px;
+  top: 285px;
   content: "";
   width: 100%;
   height: 100%;
+  z-index: -1;
   background-image: url("../img/bg-triangle-white-desktop.svg");
   background-repeat: no-repeat;
 }
@@ -187,8 +191,19 @@ input[type="radio"].button-3:checked ~ .arrows:nth-of-type(2) {
 }
 
 @media (min-width: 660px) {
+  .reviews {
+    height: 270px;
+    z-index: 1;
+  }
+
+  .reviews::after {
+    z-index: -1;
+    top: 250px;
+  }
+
   .reviews__inner {
     width: 660px;
+    padding-top: 41px;
   }
 
   .reviews__slide {
@@ -203,27 +218,44 @@ input[type="radio"].button-3:checked ~ .arrows:nth-of-type(2) {
 
   .reviews__h2 {
     font-size: $fsize-seven;
-    padding: 0 0 15px;
+    //padding: 0 0 15px;
     margin: $margin;
   }
 
   .reviews__text {
+    @include font-set (400, 1.7);
     font-size: $fsize-four;
-    padding: 0 0 120px;
+    padding: 6px 0 110px;
+    margin: 0;
   }
 
   .reviews__info {
     display: block;
+    font-size: $fsize-two;
   }
 
   .reviews-paginator {
-    bottom: -20px;
+    bottom: -32px;
   }
 }
 
 @media (min-width: 960px) {
+  .reviews {
+    height: 365px;
+    padding-top: 55px;
+  }
+
+  .reviews::after {
+    top: 380px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .reviews__inner {
     width: 960px;
+    padding-top: 0;
   }
 
   .reviews__slider-wrap {
@@ -232,6 +264,8 @@ input[type="radio"].button-3:checked ~ .arrows:nth-of-type(2) {
 
   .reviews__slider ul {
     overflow-x: hidden;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   .reviews__slider-wrap::before {
@@ -239,7 +273,7 @@ input[type="radio"].button-3:checked ~ .arrows:nth-of-type(2) {
     content: "";
     width: 80px;
     height: 70px;
-    margin: 0 auto 40px;
+    margin: 10px auto 40px;
     background: url("../img/quotes.svg") no-repeat scroll 50% 50%;
   }
 
@@ -249,11 +283,17 @@ input[type="radio"].button-3:checked ~ .arrows:nth-of-type(2) {
 
   .reviews__h2 {
     @include font-set(700, 1.6);
+    font-size: $fsize-six;
+  }
+
+  .reviews__info {
+    font-size: $fsize-four;
   }
 
   .reviews__text {
     width: 680px;
     margin: $margin;
+    padding-top: 0;
   }
 
   .reviews-paginator {
@@ -263,12 +303,16 @@ input[type="radio"].button-3:checked ~ .arrows:nth-of-type(2) {
   input[type="radio"].button-1:checked ~ .arrows:nth-of-type(2),
   input[type="radio"].button-2:checked ~ .arrows:nth-of-type(3),
   input[type="radio"].button-3:checked ~ .arrows:nth-of-type(1) {
+    top: 173px;
+    right: -84px;
     display: block;
   }
 
   input[type="radio"].button-2:checked ~ .arrows:nth-of-type(1),
   input[type="radio"].button-3:checked ~ .arrows:nth-of-type(2),
   input[type="radio"].button-1:checked ~ .arrows:nth-of-type(3) {
+    top: 173px;
+    left: -84px;
     display: block;
   }
 }

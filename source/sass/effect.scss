@@ -34,19 +34,27 @@
   .effect__title {
     @include font-set(bold, 1.2);
     font-size: $fsize-ten;
-    width: 205px;
+    padding-top: 11px;
+    margin-bottom: 12px;
+  }
+
+  .effect__title span {
+    display: block;
   }
 
   .effect__text {
     @include font-set(400, 1.7);
     font-size: $fsize-two;
     color: $color-two;
+    margin: 0;
   }
 
   .effect__link {
     @include font-set(400, 1.7);
     font-size: $fsize-two;
     color: $color-five;
+    display: block;
+    margin-top: 13px;
   }
 
   .effect__link:hover {
@@ -70,6 +78,7 @@
 @media (min-width: 960px) {
   .effect {
     background-color: $color-six;
+    padding: 23px 10px 65px;
   }
 
   .effect__container {
@@ -80,7 +89,6 @@
   }
 
   .effect__left-block {
-    margin-left: 20px;
     padding-right: 20px;
     background-image: url("../img/time-desktop@1x.png");
     background-repeat: no-repeat;
@@ -89,19 +97,28 @@
   }
 
   .effect .wrapper {
-    width: 460px;
-    margin-right: 75px;
-    padding-top: 50px;
+    width: 520px;
+    margin-left: 50px;
+    margin-right: auto;
+    padding-top: 69px;
   }
 
   .effect__title {
-    @include font-set(400, 1);
+    @include font-set(700, 1);
     font-size: $fsize-ten;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 23px;
+  }
+
+  .effect__title span {
+    display: inline-block;
   }
 
   .effect__text {
     @include font-set(400, 1.6);
     font-size: $fsize-four;
+    margin-bottom: 35px;
   }
 
   .effect__link {
@@ -110,8 +127,8 @@
   }
 }
 
-@media (min-width: 660px) and (max-width: 959px) and (min-resolution: 144dpi),
-  (min-width: 660px) and (max-width: 959px) and (min-resolution: 1.5dppx) {
+@media (min-width: 960px) and (min-resolution: 144dpi),
+  (min-width: 960px) and (min-resolution: 1.5dppx) {
   .effect__left-block {
     background-image: url("../img/time-desktop@2x.png");
     background-repeat: no-repeat;

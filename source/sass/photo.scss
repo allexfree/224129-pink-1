@@ -6,20 +6,20 @@
   padding: 0 20px;
 }
 
-.photo-item--panorama {
+.photo__item-panorama {
   position: relative;
 }
 
-.photo-item--panorama,
-.photo-item {
+.photo__item-panorama,
+.photo__item {
   margin-bottom: 20px;
 }
 
-.photo-item:nth-of-type(6) {
+.photo__item:nth-of-type(6) {
   margin: 0;
 }
 
-.photo-item--panorama::before {
+.photo__item-panorama::before {
   @include font-set(400, 2);
   font-size: $fsize-one;
   color: $color-one;
@@ -39,7 +39,7 @@
   height: auto;
 }
 
-.photo-item--panorama .photo__description {
+.photo__item-panorama .photo__description {
   margin: 0 20px;
 }
 
@@ -106,15 +106,15 @@
     padding-bottom: 20px;
   }
 
-  .photo-item--panorama {
+  .photo__item-panorama {
     margin-bottom: 50px;
   }
 
-  .photo-item--panorama::before {
+  .photo__item-panorama::before {
     top: 55px;
   }
 
-  .photo-item--panorama .photo__text {
+  .photo__item-panorama .photo__text {
     margin-bottom: 0;
     padding-bottom: 0;
   }
@@ -123,21 +123,21 @@
     position: relative;
   }
 
-  .photo-item--panorama .photo__footer {
+  .photo__item-panorama .photo__footer {
     position: absolute;
     top: 25px;
     right: 20px;
   }
 
-  .photo-item--panorama .photo__likes {
+  .photo__item-panorama .photo__likes {
     margin-right: 20px;
   }
 
-  .photo-item {
+  .photo__item {
     width: 300px;
   }
 
-  .photo-item:nth-child(odd) {
+  .photo__item:nth-child(odd) {
     margin-right: 20px;
   }
 
@@ -145,8 +145,8 @@
     padding-bottom: 23px;
   }
 
-  .photo-item:nth-child(3) .photo__text,
-  .photo-item:nth-child(1) .photo__text {
+  .photo__item:nth-child(3) .photo__text,
+  .photo__item:nth-child(1) .photo__text {
     padding-bottom: 0;
   }
 
@@ -168,18 +168,18 @@
 }
 
 @media (min-width: 960px) {
-  .photo-item--panorama {
+  .photo__item-panorama {
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
   }
 
-  .photo-item--panorama::before {
+  .photo__item-panorama::before {
     right: 10px;
   }
 
-  .photo-item--panorama .photo__description {
+  .photo__item-panorama .photo__description {
     width: 940px;
     align-self: center;
     padding: 25px 30px;
@@ -193,22 +193,22 @@
     box-sizing: border-box;
   }
 
-  .photo-item {
+  .photo__item {
     width: 300px;
     height: 555px;
     justify-content: space-between;
   }
 
-  .photo .photo-item {
+  .photo .photo__item {
     margin-right: 20px;
   }
 
-  .photo-item:nth-child(3) {
+  .photo__item:nth-child(3) {
     margin-bottom: 50px;
   }
 
-  .photo-item:nth-child(3),
-  .photo-item:nth-child(6) {
+  .photo__item:nth-child(3),
+  .photo__item:nth-child(6) {
     margin-right: 0;
   }
 

@@ -1,11 +1,12 @@
 .promo-slogan {
-  @include font-set(300, 1.6);
+  @include font-set(300, 1.3);
   font-size: $fsize-six;
   color: $color-two;
   text-align: center;
   position: relative;
   display: block;
-  margin: 50px 0 0 0;
+  height: 95px;
+  margin: 30px 0 0 0;
   padding: 0 20px;
   z-index: 5;
   box-sizing: border-box;
@@ -13,12 +14,13 @@
 
 .promo-slogan span {
   display: block;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .promo-slogan::after {
   display: block;
   position: absolute;
+  top: 93px;
   left: 0;
   content: "";
   width: $w;
@@ -48,6 +50,12 @@
   .promo-slogan {
     @include font-set(300, 1.2);
     font-size: $fsize-eight;
+    height: 150px;
+    margin: 50px 0 0 0;
+  }
+
+  .promo-slogan::after {
+    top: 150px;
   }
 
   .promo-slogan span {
@@ -80,8 +88,9 @@
     @include font-set(300, 1.2);
     font-size: $fsize-nine;
     width: 960px;
+    height: 300px;
     margin: $margin;
-    padding: 100px;
+    padding: 65px;
   }
 
   .promo-slogan span {

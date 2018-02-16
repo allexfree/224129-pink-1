@@ -1,6 +1,6 @@
 .main-menu__toggle {
   position: absolute;
-  top: 35px;
+  top: 16px;
   right: 20px;
   width: 60px;
   height: 28px;
@@ -10,14 +10,14 @@
 }
 
 .main-menu--closed .main-menu__toggle::before {
-  @include wh(50px, 2px);
+  @include wh(50px, 4px);
   content: "";
   display: block;
   position: absolute;
-  top: 3px;
-  left: 5px;
+  top: 4px;
+  left: 10px;
   background-color: $color-one;
-  box-shadow: 0 8px 0 0 $color-one, 0 16px 0 0 $color-one;
+  box-shadow: 0 10px 0 0 $color-one, 0 20px 0 0 $color-one;
 }
 
 .main-menu--closed:hover .main-menu__toggle::before {
@@ -36,18 +36,18 @@
 }
 
 .main-menu--opened .main-menu__toggle {
-  top: 20px;
+  top: 5px;
   right: 15px;
   z-index: 15;
 }
 
 .main-menu--opened .main-menu__toggle::before,
 .main-menu--opened .main-menu__toggle::after {
-  @include wh(45px, 2px);
+  @include wh(30px, 4px);
   content: "";
   position: absolute;
   top: 24px;
-  left: 8px;
+  left: 26px;
   background-color: $color-one;
 }
 
@@ -73,7 +73,7 @@
 .main-menu__list {
   display: block;
   position: absolute;
-  top: 95px;
+  top: 58px;
   left: 0;
   width: $w;
   padding: 0;
@@ -81,7 +81,7 @@
   list-style: none;
   background-color: $color-two;
   text-align: center;
-  z-index: 5;
+  z-index: 10;
 }
 
 .main-menu__list a {
@@ -132,30 +132,36 @@
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
+    padding-top: 20px;
   }
 
   .main-menu__item:last-child {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .main-menu__list a {
     font-weight: normal;
     text-transform: none;
-    border: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 0;
     margin-left: 80px;
   }
 
   .main-menu__list a:hover {
     color: $color-five;
-    border: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
   }
 
   .main-menu__list a:active {
     color: rgba(255, 255, 255, 0.3);
-    border: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
   }
 
   .main-menu__list a:focus {
+    border-top: 2px solid transparent;
     border-bottom: 2px solid $color-one;
   }
 }

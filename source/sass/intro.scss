@@ -1,6 +1,5 @@
 .intro--index {
   position: relative;
-  min-height: 730px;
   padding: 420px 20px 35px 20px;
   box-sizing: border-box;
 }
@@ -9,7 +8,7 @@
   @include wh(258px, 286px);
   display: block;
   position: absolute;
-  top: 105px;
+  top: 113px;
   left: 0;
   content: "";
   background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -23,10 +22,11 @@
   text-align: center;
   display: block;
   width: 280px;
-  padding: 20px 0;
-  margin: $margin;
+  padding: 17px 0;
+  margin: 5px auto 0;
   background-color: transparent;
   text-decoration: none;
+  text-transform: none;
   border: 3px solid $color-one;
   border-radius: 30px;
 
@@ -47,13 +47,13 @@
   align-items: baseline;
   width: 210px;
   margin: $margin;
-  padding: 40px;
+  padding: 30px 30px 20px;
   text-align: center;
 }
 
 .intro__apps-item {
-  width: 50px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
 
   img {
     width: $w;
@@ -61,7 +61,7 @@
 }
 
 .intro__description {
-  @include font-set(300, 1.7);
+  @include font-set(300, 1.9);
   font-size: $fsize-two;
   color: $color-one;
   text-align: center;
@@ -91,25 +91,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 620px;
     width: 50%;
     padding: 0 20px;
   }
 
   .intro__btn {
-    margin: 200px 0 0 0;
+    margin: 165px 0 0 10px;
     width: 265px;
     padding: 15px;
     z-index: 5;
+    text-transform: none;
   }
 
   .intro__apps {
-    margin: 0;
+    padding: 40px 0;
     z-index: 5;
   }
 
+  .intro__apps-item {
+    width: 45px;
+    height: 45px;
+  }
+
   .intro__description {
-    width: 280px;
+    @include font-set (300, 1.5);
+    width: 300px;
     z-index: 5;
+    font-size: $fsize-four;
   }
 
   .intro--index::before {
@@ -121,10 +130,10 @@
     content: "Взгляните на жизнь иначе!";
     display: block;
     position: absolute;
-    top: 200px;
+    top: 94px;
     left: 0;
     background-image: none;
-    padding: 0 22px 40px;
+    padding: 0 42px;
     margin: $margin;
     width: $w;
     height: $h;
@@ -134,8 +143,8 @@
     @include wh(660px, 545px);
     display: block;
     position: absolute;
-    top: 185px;
-    left: 0;
+    top: 75px;
+    left: -20px;
     content: "";
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
@@ -153,7 +162,8 @@
     background-image: url("../img/iphone-hand-tablet@2x.png");
     background-repeat: no-repeat;
     background-size: 700px auto;
-    top: 186px;
+    top: 76px;
+    left: -20px;
   }
 }
 
@@ -162,14 +172,16 @@
     width: 960px;
     margin: $margin;
     padding-right: 650px;
+    min-height: 744px;
   }
 
   .intro--index::after {
     @include wh(885px, 645px);
-    top: 85px;
-    left: 0;
+    top: 99px;
+    left: 26px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
+    overflow-y: hidden;
   }
 
   .intro {
@@ -178,17 +190,35 @@
   }
 
   .intro::before {
-    top: 115px;
-    left: -315px;
+    @include font-set(300, 1.2);
+    font-size: $fsize-nine;
+    top: 111px;
+    left: -320px;
     padding: 0 360px 50px;
   }
 
   .intro__btn {
-    margin: 150px 0 0 0;
+    font-size: $fsize-eleven;
+    margin: 220px 10px 0 0;
+    text-transform: none;
   }
 
   .intro__apps {
     padding: 50px 40px;
+  }
+
+  .intro__apps-item {
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  .intro__description {
+    @include font-set(300, 1.4);
+    font-size: $fsize-four;
+    width: 300px;
+    margin-right: 10px;
   }
 }
 
