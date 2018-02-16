@@ -101,6 +101,15 @@
     align-items: center;
     padding: 0 20px;
   }
+
+  .page-footer__logo--desktop {
+    display: none;
+  }
+
+  .page-footer__social-link {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -108,7 +117,28 @@
   .page-footer .wrapper {
     width: 960px;
     margin: $margin;
-    padding: 40px 20px;
+    padding: 22px 10px;
     box-sizing: border-box;
+  }
+
+  .page-footer__logo--tablet {
+    display: none;
+  }
+
+  .page-footer__logo--desktop {
+    display: block;
+  }
+
+  .page-footer__social {
+    margin: 38px 0;
+  }
+
+  .page-footer__social-link {
+    width: 45px;
+    height: 45px;
+  }
+
+  .page-footer__copyright-text {
+    font-size: $fsize-four;
   }
 }
