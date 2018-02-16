@@ -119,6 +119,7 @@
 
   .features__item:nth-child(2) .features__title {
     padding: 0 20px;
+    margin-right: 12px;
   }
 
   .features__item:first-child::before {
@@ -160,10 +161,6 @@
 
   .features__item:first-child .features__title {
     margin-right: 12px;
-  }
-
-  .features__item:nth-child(2) .features__title {
-    margin-right: 10px;
   }
 
   .features__item:last-child .features__title {
