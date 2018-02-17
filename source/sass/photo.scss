@@ -1,5 +1,28 @@
 .photo {
   box-sizing: border-box;
+  position: relative;
+}
+
+.photo__wrapper {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.photo__sticker {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: block;
+  width: 140px;
+  background-color: $color-five;
+  @include font-set(400, 2);
+  font-size: $fsize-one;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-one;
+  padding: 5px 0;
 }
 
 .photo .wrapper {
@@ -8,6 +31,7 @@
 
 .photo__item-panorama {
   position: relative;
+  z-index: -1;
 }
 
 .photo__item-panorama,
@@ -19,7 +43,7 @@
   margin: 0;
 }
 
-.photo__item-panorama::before {
+/*.photo__item-panorama::before {
   @include font-set(400, 2);
   font-size: $fsize-one;
   color: $color-one;
@@ -31,7 +55,7 @@
   display: block;
   content: "Панорама дня";
   background-color: $color-five;
-}
+}*/
 
 .photo__img {
   display: block;
@@ -94,9 +118,8 @@
 }
 
 @media (min-width: 660px) {
-  .promo__paragraph {
-    @include font-set(400, 1.6);
-    font-size: $fsize-four;
+  .photo__sticker {
+    top: 55px;
   }
 
   .photo .wrapper {

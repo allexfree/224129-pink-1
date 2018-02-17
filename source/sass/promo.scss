@@ -54,6 +54,11 @@
     margin: 50px 0 0 0;
   }
 
+  .promo__paragraph {
+    @include font-set(400, 1.6);
+    font-size: $fsize-four;
+  }
+
   .promo-slogan::after {
     top: 150px;
   }
