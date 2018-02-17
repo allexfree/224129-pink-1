@@ -11,17 +11,17 @@
 }
 
 .photo__sticker {
+  @include font-set(400, 2);
+  font-size: $fsize-one;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-one;
   position: absolute;
   top: 0;
   right: 20px;
   display: block;
   width: 140px;
   background-color: $color-five;
-  @include font-set(400, 2);
-  font-size: $fsize-one;
-  text-transform: uppercase;
-  text-align: center;
-  color: $color-one;
   padding: 5px 0;
 }
 
